@@ -5,13 +5,14 @@ syntax enable
 syntax on
 filetype plugin indent on
 set number
-"colorscheme molokai
+filetype plugin indent on
 if has('gui_running')
 	set background=light
 else
 	set background=dark
 endif
 colorscheme solarized
+colorscheme molokai
 set cursorline
 set ruler
 
@@ -26,3 +27,8 @@ set hlsearch
 set showmatch
 set matchtime=2
 set smartindent
+
+noremap! <M-j> <Down>
+noremap! <M-k> <Up>
+noremap! <M-h> <Left>
+noremap! <M-l> <Right>
